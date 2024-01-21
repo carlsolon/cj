@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="two.css">
+</head>
+<body>
+
+  <h1>Payment Form</h1>
+
+  <form action="/process-payment" method="post">
+    <!-- Basic customer information -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Payment details -->
+    <label for="card">Credit Card Number:</label>
+    <input type="text" id="card" name="card" required>
+
+    <label for="expiry">Expiration Date:</label>
+    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required>
+
+    <!-- Amount to be paid -->
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" name="amount" required>
+
+    <!-- Submit button -->
+    <button type="submit">Submit Payment</button>
+  </form>
+  <script src="three.js"></script>
+</body>
+</html>
